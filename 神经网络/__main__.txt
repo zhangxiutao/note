@@ -1,0 +1,3 @@
+每一个文件被import或者被Python直接执行的时候，都会有__name__这个局部变量被赋值，
+如果是import,__name__是模块名，如果是python执行那就是main。
+所以有些模块既可以直接执行也可以被import，行为也不一样

@@ -1,0 +1,4 @@
+ldlsi:/home/xiutao/anaconda2/envs/ldlsi/lib/python2.7/site-packages/torch
+base:/home/xiutao/anaconda2/lib/python2.7/site-packages/torch
+
+±àÒëºÃµÄÔÚ/usr/local/lib/python2.7/dist-packages/torch
