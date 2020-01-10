@@ -1,0 +1,2 @@
+Visualization error: Expected Ptr<cv::UMat> for argument '%s'
+把cv2.resize的第三个参数删掉
