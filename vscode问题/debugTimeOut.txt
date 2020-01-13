@@ -1,0 +1,9 @@
+create a launch file and add the following
+{
+     "name": "Python: Debug Console",
+     "type": "python",
+     "request": "launch",
+     "program": "${file}",
+     "console": "internalConsole",
+     "cwd": "${fileDirname}"
+}

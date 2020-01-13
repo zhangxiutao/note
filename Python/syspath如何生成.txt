@@ -1,0 +1,6 @@
+sys.path在python脚本执行时动态生成，包括以下3个部分： 
+1.脚本执行的位置，即运行模块的路径 （顺序第一）
+2.环境变量中的PYTHONPATH, 即.bash_profile （顺序第二）
+3.第三方模块的位置，一般在site-package文件夹下 （顺序第三）
+4.通过sys.path.append(path)添加到sys.path中的路径 （顺序第四）
+

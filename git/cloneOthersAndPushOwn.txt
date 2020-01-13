@@ -1,0 +1,33 @@
+clone你需要的项目：
+
+    git clone 代码地址
+
+进入项目目录：
+
+    cd app-demo
+
+删除原有git信息，有问题一直回车即可
+
+    rm -r .git
+
+初始化.git：
+
+    git init
+
+将本地代码添加到仓库
+
+    git add .
+    git commit -m “说明…”
+
+在git官网上新建一个Project，注意不要生成README.md文件
+
+关联远程库
+
+    git remote add origin 远程库地址
+
+提交代码
+
+    git push --set-upstream origin master
+————————————————
+版权声明：本文为CSDN博主「xiao xu」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/weixin_42420703/article/details/97392192
