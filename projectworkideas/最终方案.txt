@@ -1,0 +1,9 @@
+应该是什么？
+整套系统还是只有感知？
+感知？包括free space detection，做好之后怎么用它到整个系统？
+
+简单的方法可以是这是工地，然后用别的方法进行free space detection or lane detection
+opencv cascade
+salient
+
+hog+svm

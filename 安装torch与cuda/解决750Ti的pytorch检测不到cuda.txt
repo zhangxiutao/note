@@ -1,0 +1,7 @@
+1. 要sudo python setup.py install
+2. 要从源码编译
+3. 要用gcc 6.0
+4. 编译失败后要git clean
+5. 编译前就要装cuda9.0
+6. 编译好的包被安装到了/usr/local/lib/python2.7/dist-packages/torch，到dist-packages
+的这个目录下import torch，torch.cuda.is_available()就是true

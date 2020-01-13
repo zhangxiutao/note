@@ -1,0 +1,5 @@
+分为好几个batch，
+每一个batch计算出正确的个数x,
+accuracy = x[i]/batch[i].size for i in batches
+
+因为用的是logsoftmax，所以神经网络输出都是负数，但是仍然是越大表示概率越大

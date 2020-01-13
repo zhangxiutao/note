@@ -1,0 +1,8 @@
+ln -s /usr/bin/gcc-6 /usr/local/cuda/bin/gcc
+ln -s /usr/bin/g++-6 /usr/local/cuda/bin/g++
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 10
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 20
+
+sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+sudo update-alternatives --set cc /usr/bin/gcc
