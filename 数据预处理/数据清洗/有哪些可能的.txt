@@ -1,0 +1,11 @@
+1.用google的image搜的图有很多和名字不符合
+2.resize之后扭曲了
+3.有很多是空图
+4.有svg与gif
+5.太模糊
+6.不完整
+7.要检测的物体所占比例太小
+8.白天夜晚
+9.背景不一定是道路
+10.是不是可以手工创建出artificial data？
+11. 横着的条纹也可 schrankenzaun, leitbake
