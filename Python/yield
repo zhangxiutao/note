@@ -1,0 +1,5 @@
+1.yield后面的值就像static变量，然后函数每次返回这个值。
+所以yield要在循环内部才有意义
+2.yield用来每一次调用函数生成取决于上次函数状态的值
+3.如果目的是生成一个序列，range()或者for循环+append或者yield没什么区别，反正都会占内存
+4.yield所在的那个generator(function)也要被多次调用才有意义
