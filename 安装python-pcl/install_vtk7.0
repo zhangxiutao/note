@@ -1,0 +1,10 @@
+1. at first change gcc and g++ verison to 5
+2. 
+wget http://www.vtk.org/files/release/7.0/VTK-7.0.0.tar.gz
+tar -xf VTK-7.0.0.tar.gz
+cd VTK-7.0.0 && mkdir build && cd build
+cmake ..
+make                                                                   
+sudo make install
+
+

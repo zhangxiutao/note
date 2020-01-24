@@ -1,0 +1,4 @@
+1. how does yolo handle the difficulty that the number of output of object detection is unknow beforehand.
+Every cell has 2 anchor boxes. So YOLO detects maximally 2 objects in one cell. If 3 objects are in one cell. YOLO cannot handle it too.
+2. how does yolo output look like
+one or two bounding boxs per cell. One object may be detected as two achor boxes because of ambiguous shape(like square), but using nms one of them maybe deleted.

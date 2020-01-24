@@ -1,0 +1,9 @@
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib64
+
+/home/xiutao/anaconda2/compiler_compat/ld: cannot find -lvtkgl2ps-7.0
+/home/xiutao/anaconda2/compiler_compat/ld: cannot find -lvtkRenderingContextOpenGL-7.0
+/home/xiutao/anaconda2/compiler_compat/ld: cannot find -lvtkRenderingGL2PS-7.0
+/home/xiutao/anaconda2/compiler_compat/ld: cannot find -lvtkRenderingLIC-7.0
+/home/xiutao/anaconda2/compiler_compat/ld: cannot find -lvtkRenderingOpenGL-7.0
+/home/xiutao/anaconda2/compiler_compat/ld: cannot find -lvtkRenderingVolumeOpenGL-7.0
+

@@ -1,0 +1,3 @@
+1.extract the basic faces in a dataset. And use linear combination to represent every face for data compression.
+2.for comparing the similarity of two vectors,calculate euclidean distance.
+3.the distance between face space(mean image vector) and new image vector, and the distance between each class vectors and new image vector
