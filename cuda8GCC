@@ -1,0 +1,19 @@
+1.apt-get install gcc-4.8
+2.cd /usr/bin we can see gcc-4.8
+3.
+sudo update-alternatives --remove-all gcc
+sudo update-alternatives --remove-all g++
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 10
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 20
+
+sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+sudo update-alternatives --set cc /usr/bin/gcc
+
+4../cuda*.run --tar mxvf
+5.copy installUtils.pm to /usr/lib/x86_64-linux-gnu/perl-base
+6.export $PERL5LIB
+7.run runfile
+8.ln -sfn /usr/local/cuda-8.0 /usr/local/cuda
+9.export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64 if tensorflow cannot find it
+10.export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/cudnn/lib64 if tensorflow cannot find it

@@ -1,0 +1,5 @@
+c++ is a language for communicating with machine
+python is for communicating with interpreter
+
+language flow:c++ code->(compiler)binary
+python->(interpreter)binary

@@ -1,0 +1,23 @@
+why i cannot remember what tf does for me?
+Because i don't know what tf has done for me.
+i don't know what does transform.setOrigin( tf::Vector3(msg->x, msg->y, 0.0) ); do or br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", turtle_name)); do.
+Why do i need tf::Transform data structure.
+for me the best way is to remember that, structuring raw data and communicating stuff are done by tf. And the most important api
+is lookuptransform which does all the matrix multiplication for you.
+two things when using tf:
+1.get sensor data and publish it as tf::transform
+2.get transform between any two coordinate systems by lookuptransform
+
+what is framework, we put things into it, and it will run with its rule, and we get the result.
+I am communicating with framework through interface.
+what is interface, it is the line of code which should be referenced by author and user.
+
+
+Sometimes I don't know what should I do to achieve such a result like turtlesim. Because I don't know what is happening
+below the interfaces which I have been using. I can only say that I should use qt to display, I should create a node which
+does visualization and a node which does the computation about the pose of turtle(start point, velocity, pose) and publishes the poses..
+
+All of these stuffes which I can come up with are high-level thinking, which always refer to the interface of some framework, instead of what is behind them.
+
+Knowing which level I am thinking on, does help to find the right searching boundary of possible solutions.
+

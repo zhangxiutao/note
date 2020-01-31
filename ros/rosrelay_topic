@@ -1,2 +1,5 @@
 rosrun topic_tools relay /image_publisher_1580203404158519838/image_raw /camera/rgb/image_raw
 it forwards from /image_publisher_1580203404158519838/image_raw to /camera/rgb/image_raw
+
+
+rosrun topic_tools relay /usb_cam/image_raw /camera/rgb/image_raw

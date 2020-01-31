@@ -1,0 +1,7 @@
+1.rnn is used to encode a sequence into another sequence. For example,
+rnn can be used to extract the underlying rule of a sequence of number.
+given a number in a sequence, rnn predicts the next number.
+
+2.the training process is that, a sequence is like a batch, and the parameters are updated after evey iteration of a batch.
+3.For example, [1,2,3,4] can be viewed as 3 training samples
+[1,2],[2,3],[3,4]
