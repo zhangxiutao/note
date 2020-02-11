@@ -1,0 +1,3 @@
+rosparam一定要在launchfile里面初始化,
+
+rosparam set /lidar_euclidean_cluster_detect/ransac_height 0.5

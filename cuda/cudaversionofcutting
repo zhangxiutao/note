@@ -1,0 +1,6 @@
+# s = time.time()
+# points_array_gpu = cp.ones(40000).transpose()<5
+#points_array_gpu = cp.array(list(pc2.read_points(data, skip_nans=True, field_names = ("x", "y", "z"))),dtype=np.float32)
+#x_array_gpu_bitmap = points_array_gpu.transpose()[0]<5  
+# cp.cuda.Stream.null.synchronize()
+# e = time.time()

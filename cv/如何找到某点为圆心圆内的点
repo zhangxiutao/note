@@ -1,0 +1,5 @@
+1.draw a circle as mask
+2.use and
+3.get a picture where only the pixels inside the circle is 255
+4.findNonZero
+

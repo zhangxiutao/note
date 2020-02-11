@@ -1,1 +1,2 @@
 rosrun rqt_tf_tree rqt_tf_tree
+rosrun rqt_tf_tree rqt_tf_tree --force-discover

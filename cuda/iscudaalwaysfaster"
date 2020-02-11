@@ -1,0 +1,13 @@
+https://towardsdatascience.com/heres-how-to-use-cupy-to-make-numpy-700x-faster-4b920dda1f56
+
+only when data poitns are more than 10000000.cupy is faster than numpy
+
+the pc2.read_points cost more than 0.01s which is 10ms
+
+import time
+
+s = time.time()
+
+e = time.time()
+
+print(e-s)

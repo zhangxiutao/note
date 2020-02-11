@@ -1,0 +1,9 @@
+
+
+    __global__ - Runs on the GPU, called from the CPU or the GPU*. Executed with <<<dim3>>> arguments.
+    __device__ - Runs on the GPU, called from the GPU. Can be used with variabiles too.
+    __host__ - Runs on the CPU, called from the CPU.
+
+*) __global__ functions can be called from other __global__ functions starting
+compute capability 3.5.
+

@@ -1,0 +1,10 @@
+1. firstly height, width = img_origin_cv2.shape[0:2]
+           self.lowerhalf_height = int(3*height/4)
+           self.lowerhalf_width = width
+           img_lowerhalf_cv2 = img_origin_cv2[self.lowerhalf_height:(height),0:self.lowerhalf_width,:]
+2. secondly init function         
+		self.lowerhalf_height = 96 #(384(total height)-288(cropped height))
+        self.lowerhalf_width = 640
+        self.img_car_mask = np.ones([self.lowerhalf_height,self.lowerhalf_width]).astype(np.uint8)
+3. bounding_box.ymin = bounding_box.ymin-int(height/2)   height/2 changes
+   bounding_box.ymax = bounding_box.ymax-int(height/2)
