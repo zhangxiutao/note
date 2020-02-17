@@ -1,3 +1,4 @@
-rosparam一定要在launchfile里面初始化,
-
+1.同时在launchfile和cpp文件里初始化param是重复了，但是在程序里也初始化的目的是gdb调试的时候还是有参数，用了launchfile就不用每次编译
+2.一定要记住/lidar_euclidean_cluster_detect这个命名空间
+3.roslaunch的param值会覆盖掉程序的值
 rosparam set /lidar_euclidean_cluster_detect/ransac_height 0.5

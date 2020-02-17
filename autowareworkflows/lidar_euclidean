@@ -1,10 +1,15 @@
+-1.rqt_bag chunk_0016.bag
 0.modify output_frame in lidar_euclidean_cluster_detect.launch to os1_lidar
 1.terminator
 2.roscore
 3.rosrun topic_tools relay /os1_cloud_node/points /points_raw
-4.rosrun tf static_transform_blisher 0 0 0 0 0 0 world os1_lidar 10
+4.rosrun tf static_transform_publisher 0 0 0 0 0 0 world os1_lidar 10
 5.roslaunch lidar_euclidean_cluster_detect lidar_euclidean_cluster_detect.launch
 6.docker commit containerID autoware/autoware:1.12.0-melodic-cuda
 
 rosparam set /lidar_euclidean_cluster_detect/ransac_height 0.5
 rosparam set /lidar_euclidean_cluster_detect/ransac_angle 0.5
+
+
+name="lidar_euclidean_cluster_detect" output="screen" launch-prefix="terminator -x gdb">
+cv::Exception
