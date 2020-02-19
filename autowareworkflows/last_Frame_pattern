@@ -1,0 +1,6 @@
+define x_last_frame;
+
+if (frame_count>=1)  //execute from second frame so that we have x_last_frame
+use x_last_frame;
+
+update x_last_frame with x_current_frame;
