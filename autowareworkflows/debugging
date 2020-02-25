@@ -1,0 +1,15 @@
+name="lidar_euclidean_cluster_detect" output="screen" launch-prefix="terminator -x gdb">
+
+start
+
+break ..
+
+continue
+
+next
+
+或者break run
+
+用这个模式的时候launch的参数是传递不进去的，所以要在程序里设置默认参数
+
+p *(double *)_coeffient_linefitting_mat_64F.data@4

@@ -1,0 +1,8 @@
+
+
+    su root
+    xdpyinfo
+    find the string behind "name of display" e.g., name of display：127.0.0.1：1.0 (which is "1.0")
+    export DISPLAY=:1.0
+
+

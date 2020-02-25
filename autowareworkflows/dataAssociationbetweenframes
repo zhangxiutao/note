@@ -1,0 +1,43 @@
+我没法说上一帧的数组的0和这一帧的0就是一个object。。
+define objects_array_last_frame
+use objects_array_last_frame from second frame on
+update objects_array_last_frame with objects_array_current_frame
+
+x frame:
+objects_array={id_obj0:status,id_obj1:status,id_obj2:status,};
+x+1 frame:
+objects_array={id_obj0:status,id_obj2:status};
+
+所以我必须要有跨帧的对现实中每一个物体唯一的标记。这样我才可以在下一帧把同一个物体的状态对应起来。
+如何做到？
+对现实中每一个物体唯一的标记可以是写在物体上面的id，通过OCR得到ID。
+但是如果没有呢？我如何计算出一个值唯一代表这个物体，并且保证下一帧这个物体还是被计算出同样的值。
+用物体的特征？什么特征可以完全区分出不同目标？
+问题是每个目标都是leitbake,从外观上完全没有办法区分。
+那就从位置关系上区分。
+上一帧的leitbake0与这一帧的leitbake0位置上不会差太多。
+所以可以粗略判断如果有物体出现在上一帧leitbake0的半径x范围内，那么这个物体很有可能是leitbake0。
+所以过程应该如下：
+1.新出现一个物体
+x frame:
+status_array={status0,status1};
+x+1 frame;
+status_array={status2,status3,status4};
+
+假设status0和status2差不多, status1和status4差不多， 那就可以说：可能存在两个物体连续出现在x和x+1帧中，并且x+1帧出现了新物体,
+方法是计算出status0与status2,3,4的相似性，status1与status2,3,4的相似性，很相似的就拿来计算差值。
+我最终要得到的是status0-status2，status1-status4
+2.新出现一个物体，但是x frame的status0与x+1 frame的不止一个status相似。假设status0与status2和4都相似
+这是什么情况？
+x frame:
+status_array={status0,status1};
+x+1 frame;
+status_array={status2,status3,status4,status5,status6,status7};
+
+
+
+
+
+
+
+
