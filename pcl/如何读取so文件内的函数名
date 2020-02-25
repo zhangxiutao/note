@@ -1,0 +1,1 @@
+readelf -Ws /usr/lib/x86_64-linux-gnu/libpcl_search.so | c++filt | grep 'pcl::search::Search<pcl::PointXYZ>::getName'

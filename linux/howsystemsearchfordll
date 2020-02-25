@@ -1,0 +1,6 @@
+In a nutshell, when it's looking for a dynamic library (.so file) the linker tries:
+
+    directories listed in the LD_LIBRARY_PATH environment variable (DYLD_LIBRARY_PATH on OSX);
+    directories listed in the executable's rpath;
+    directories on the system search path, which (on Linux at least) consists of the entries in /etc/ld.so.conf plus /lib and /usr/lib.
+
