@@ -1,0 +1,7 @@
+1.https://zhuanlan.zhihu.com/p/88747614
+2.Picking a random point and find its cluster, then picking a nother points and find its
+cluster.For points which are not core points(may be on the boundary of a core or just a noise), will be checked again after all clusters are found if it is a noise 
+or belongs to another boundary.
+3.two steps:first form the clusters, then check if the noise/boundary points are one of the clusters
+4.first we should form the table of the distance between any two points, then when we randomly pick a points we know which points are its neighbours.
+then we can build a tree recursivly to form a cluster.

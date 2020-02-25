@@ -1,0 +1,5 @@
+clustroid
+smallest maximum distance to other points
+smallest average distance to other points 
+smallest sum of squares of distances 
+to other points

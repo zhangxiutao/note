@@ -1,0 +1,7 @@
+kernel density estimation:
+sum up pdf centered around a point.
+
+skinny kernel: every point is a cluster (low bandwidth)
+short fat kernel: more reasonable cluster(high bandwidth)
+
+https://spin.atomicobject.com/2015/05/26/mean-shift-clustering/

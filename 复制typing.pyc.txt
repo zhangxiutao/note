@@ -1,1 +1,0 @@
-把conda环境下的typing.pyc复制到/usr/lib/python2.7

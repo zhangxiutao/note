@@ -1,0 +1,2 @@
+convolution is a operation between two functions and results in another function
+which tells us at which region two functions overlaps and its level

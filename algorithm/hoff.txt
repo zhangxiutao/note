@@ -1,0 +1,11 @@
+1. hogh transformation is just a algorithm which can get local model from
+data which contains large amount of noise.
+2.hogh is essentially a brute force search of  grid computing by knowing solution space
+3.the first step is to paramaterize the model, then choose key
+
+4.sliding window+cnn, ransac, hough are all searching algorithms which needs keys
+to determin whether it is something we want or not
+
+5. functions are also data point when they can be paramaterized
+
+6. pca also projects the data points into another space just like hough

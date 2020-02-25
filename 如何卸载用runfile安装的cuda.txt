@@ -1,1 +1,0 @@
-进入/usr/local/cuda/bin执行uninstall脚本

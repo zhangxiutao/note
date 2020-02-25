@@ -1,0 +1,8 @@
+  1.  #x_array_bitmap = points_array.transpose()[0]<5
+    # for point in points_array:
+    #   if point[0] < 5 and point[1] < 5 and point[2] < 2:
+    #     points_roi.append(point)
+
+   2. idx_points_roi = ((points_array.transpose()[0]<2) & (points_array.transpose()[1]<1) & (points_array.transpose()[2]<1)).nonzero()[0]
+
+2 is 4 times faster than the first one

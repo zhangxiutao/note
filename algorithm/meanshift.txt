@@ -1,0 +1,2 @@
+1. kde to build a distribution of data
+2. let individual point climd to the top of each mode(mountain top) 

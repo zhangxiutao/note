@@ -1,0 +1,3 @@
+if a < 1 and a < 2:
+a<2 is unnecessary because a<1 is subset of a<2. Or in another words, a<1 is the sufficient condition of a<2.
+generally. if we want to add a new condition to and, we should consider whether it can be deduced from other conditions, if yes, it is unnecessary

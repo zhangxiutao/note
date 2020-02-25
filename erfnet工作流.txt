@@ -1,4 +1,0 @@
-1.打开roscore
-2.rosrun image_publisher image_publisher xx.jpg
-3.用vscode改cnn_node.py的scribe的topic
-4.运行

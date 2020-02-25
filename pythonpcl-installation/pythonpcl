@@ -1,0 +1,14 @@
+1.install the following 4 packages
+libpcl1.7 : Depends: libpcl-apps1.7 but it is not going to be installed
+             Depends: libpcl-io1.7 but it is not going to be installed
+             Depends: libpcl-surface1.7 but it is not going to be installed
+             Depends: libpcl-visualization1.7 but it is not going to be installed
+
+
+2.apt-cache madison libflann-dev
+3.sudo apt-get install libflann-dev=1.8.4-4.1
+
+
+some childpackages conflict with others. only install the first 4
+
+when installing pythonpcl apt will remove ros related packages which are not compatible with the 4 packages mentioned above

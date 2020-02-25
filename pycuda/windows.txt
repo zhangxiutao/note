@@ -1,0 +1,1 @@
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\include\crt/host_config.h(133): fatal error C1189: #error:  -- unsupported Microsoft Visual Studio version! Only the versions 2012, 2013, 2015 and 2017 are supported!

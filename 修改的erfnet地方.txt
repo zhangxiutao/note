@@ -1,3 +1,0 @@
-1.erfnet_road.py 98ÐÐ
-2.cnn_node.py 75ÐÐ
-3.cnn_node71ÐÐ

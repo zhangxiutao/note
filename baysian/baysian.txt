@@ -1,0 +1,15 @@
+by using law of total probability
+and law of conditional probability, we know how to compute posterior distribution
+You need the posterior distribution,  p(¦È|y) , and a loss function  C(¦È,a)  to make an optimal decision according to Bayesian decision theory. Having a prior and a likelihood is equivalent to having the posterior, since we know how to calculate the posterior from these two.
+
+
+theta map, theta mmse, used for estimating theta(real value) when we have posterior p(theta|y)
+
+2.filtering
+motion model:p(xk|xk-1) physical model
+measurement model: how the measurements relate to the state vector p(yk|xk)
+prior
+
+why baysian rule?because actually the real value leads to the oberserved value,
+but we are estimating the real value by observed data
+
