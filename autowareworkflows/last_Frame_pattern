@@ -1,6 +1,65 @@
-define x_last_frame;
 
-if (frame_count>=1)  //execute from second frame so that we have x_last_frame
-use x_last_frame;
 
-update x_last_frame with x_current_frame;
+
+
+prediction of this frame
+func()
+{
+filtered_value_this_frame = prediction of this frame * measure of this frame
+prediction of next frame=p(filtered_value_this_frame)
+prediction of this frame = prediction of next frame //保证了下一次进入循环的时候prediction of this frame是下一次的当下的值，真正到达下一个时刻的时候上一时刻说的将来已经是现在了,这是
+一个重复迭代的过程，上一时刻的输出是这一时刻的输入next相当于输出，this相当于输入，这和函数调用一个道理，传入的参数对于调用者和函数内部的名字是不一样的，上一帧是下一帧的调用者，从filtered_value计算出
+prediction可以是调用者（上帧）的责任也可以是这一帧的责任。所以函数会有两种写法，以prediction of this frame的值为输入或者以filtered_value_last_frame作为输入。
+明确写出这一帧如何传递参数给下一帧，然后再优化。
+}
+
+prediction of next frame
+func()
+{
+filtered_value_this_frame = prediction of next frame * measure of this frame 这种写法可读性就不强，next是站在上一帧说，this是站这一帧说
+prediction of next frame=p(filtered_value_this_frame)
+}
+
+
+filtered_value_last_frame
+
+func()
+{
+prediction of this frame = p(filtered_value_last_frame)
+filtered_value_this_frame = prediction of this frame*measure of this frame
+filtered_value_last_frame = filtered_value_this_frame
+}
+
+
+把当前帧想成调用者还是被调用者(是上一帧的被调用者，是下一帧的调用者)
+前者：我拿到measure数据后怎么处理(配合prediction的输入)，最后要给到下一帧什么数据(prediction)。
+后者：我拿到上一帧数据后怎么处理(配合measure的输入)，最后要给到下一帧什么数据(prediction)。
+结果都一样。
+1.站在当前帧去命名变量，把收集到数据的那个瞬间想象成当前帧。
+2.分配好调用者和被调用者的任务（两个pattern）。
+3.先保证可读性再优化。
+4.第一帧单独处理（没有过去帧），或者设置初始值。初始值相当于第一帧的前帧数据
+
+把当前帧想象成被调用者，为了满足上一帧要计算下一帧的filtered_value的需求，把当前帧想成调用者，计算下一帧的filtered_value.
+
+
+所以分成两半写。
+先写成被调用者，再写成调用者
+
+像kalman这种初始值不能随便设置的（会影响后续结果），就必须要有对应于第一帧和之后的程序
+
+mat
+loop every 10 frame{
+draw(mat);
+draw(mat);
+clear
+}
+
+mat
+loop every 10 frame{
+clear
+draw(mat);
+draw(mat);
+}
+
+前面两种是不一样的，把mat想象成两种状态，前者让cleared的状态维持了10frames，后者让uncleared的状态维持了10frames

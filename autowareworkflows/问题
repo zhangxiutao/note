@@ -1,3 +1,19 @@
 1.distance_threshold设置太小就会有很多点被漏标记为ground,设置太大就把leitbake滤掉了
 2.seg.setEpsAngle(pcl::deg2rad (in_floor_max_angle));为什么注释掉就可以了
+<<<<<<< HEAD
 3.如何与做到小数据量用cuda加速
+=======
+3.如何与做到小数据量用cuda加速,解包的过程才是最耗时的
+4.launchfile的参数怎么传递进的
+5.GPU_CLUSTERING 为什么redefine了
+6.为什么GDP调试的时候按n居然会往前走
+7.cuda代码在哪里
+8.只有在某些输入的时候函数才会exception，用断点去碰运气显然不行,怎么让他自己报自己的行号
+9.为什么downsample后cv:exception就没有了
+10._clustering_ranges和_clustering_distances是multithreading的时候才有用
+
+gdb catch
+
+11.这种靠墙的怎么办，点数太多，太长
+12.点太离散，用了曲线拟合后很奇怪
+>>>>>>> f8caf8cb7abdfdaebed6f2d5b19e7e13c5345b43
