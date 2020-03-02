@@ -1,0 +1,12 @@
+min[一开始的初始error, measurementerror]开始，每一次Update后的error递减。
+prediction的error是往update后的error上直接加
+
+B矩阵是要在有已知加速度的情况下才可以用
+C是从X矩阵到Y矩阵（状态矩阵，我们关心的变量）
+
+kalman gain就是new_var = 1/(1/var2 + 1/var1)
+p = apat + q就是new_var = var1 + var2
+
+计算covariance 的时候a^t*a
+
+A
