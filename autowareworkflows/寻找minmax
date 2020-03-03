@@ -1,0 +1,18 @@
+bool less_by_x(const geometry_msgs::Point& lhs, const geometry_msgs::Point& rhs)
+{
+  return lhs.x < rhs.x;
+}
+
+bool less_by_y(const geometry_msgs::Point& lhs, const geometry_msgs::Point& rhs)
+{
+  return lhs.y < rhs.y;
+}
+
+auto minmax_element_x = std::minmax_element(in_centroids.points.begin(), in_centroids.points.end(), less_by_x);
+auto max_element_y = std::max_element(in_centroids.points.begin(), in_centroids.points.end(), less_by_y);
+float x_min = (*minmax_element_x.first).x;
+float x_max = (*minmax_element_x.second).x;
+float y_max = (*max_element_y).y;
+
+
+

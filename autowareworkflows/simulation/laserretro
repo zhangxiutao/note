@@ -1,0 +1,4 @@
+      <gazebo reference="link">
+    <laserRetro>1000</laserRetro>
+  </gazebo>
+

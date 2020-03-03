@@ -1,0 +1,55 @@
+controlling:
+rostopic pub /cmd_vel geometry_msgs/Twist -r 3 -- '[0.5,0.0,0.0]' '[0.0, 0.0, 0.0]'
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+starting simulation:
+roslaunch vehicle_gazebo_simulation_launcher gazebo_launcher.launch world_name:=mcity gpu:=true
+
+
+rviz-test:
+roslaunch vehicle_gazebo_simulation_launcher rviz_test.launch
+
+docker:
+docker commit containerID autoware/autoware:1.12.0-melodic-cuda
+
+sensor and car models:
+<xacro:include filename="$(find vehicle_model)/urdf/body.xacro" />
+<xacro:include filename="$(find vehicle_model)/urdf/wheel.xacro" />
+<xacro:include filename="$(find vehicle_model)/urdf/steering.xacro" />
+<xacro:include filename="$(find velodyne_description)/urdf/HDL-32E.urdf.xacro"/>
+<xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+<xacro:include filename="$(find gazebo_camera_description)/urdf/monocular_camera.xacro"/>
+<xacro:include filename="$(find gazebo_imu_description)/urdf/imu.xacro"/>
+
+euclidean_cluster.yaml所在位置
+/home/xiutao/Autoware-master/ros/src/util/packages/autoware_launcher/plugins/refs/euclidean_cluster.yaml
+这里可以设置lidar_euclidean_cluster_detect这个节点的output所在的frame
+
+apt-key
+sudo apt-key --keyserver-options http-proxy=http://XIUTZHA:DotaGod123@53.18.191.200:3128/
+
+pip
+pip install --proxy=http://XIUTZHA:DotaGod123@53.18.191.200:3128/
+
+get time
+date '+%A %W %Y %X'
+
+输出warning的node
+export ROSCONSOLE_FORMAT='${severity}:${node}:${file}:${function}:${time}:${message}' 
+
+-n 1
+rostopic echo -n 1 /gazebo/model_states
+
+rosservice call /gazebo/get_link_state autoware_gazebo::base_link ''
+
+``
+export PYTHONPATH="`pwd`:$PYTHONPATH"
+
+sudo pmc 'get PARENT_DATA_SET' 'get CURRENT_DATA_SET' 'get PORT_DATA_SET' 'get TIME_STATUS_NP' -i enp0s31f6
+
+journal -f -u ptp4l
+
+SCNN-tensorflow:CUDA_VISIBLE_DEVICES="0" python tools/test_lanenet.py --weights_path /home/xiutao/Documents/trained_model/model_culane-71-3/culane_lanenet_vgg_2018-12-01-14-38-37.ckpt-10000 --image_path /home/xiutao/Codes-for-Lane-Detection-master/SCNN-Tensorflow/lane-detection-model/demo_file/test_img.txt --save_dir "/home/xiutao/Documents/test_result/"
+
+sudo git clean -xfd && git submodule foreach git clean -xfd
+
