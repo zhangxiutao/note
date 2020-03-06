@@ -16,6 +16,14 @@ next
 p *(double *)_coeffient_linefitting_mat_64F.data@4
 
 p 'lidar_euclidean_cluster_detect.cpp'::predictTrajectory::s
-
+p 'lidar_euclidean_cluster_detect.cpp'::seperateAndFittingLanes::velocity_vectors_buffer
+p 'lidar_euclidean_cluster_detect.cpp'::buildLocalMapAndPredictCollision::count
 
 add_compile_options(-O0)
+
+thread apply all bt
+
+
+--env QT_X11_NO_MITSHM=1
+
+https://github.com/osrf/docker_images/issues/21

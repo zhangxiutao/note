@@ -1,0 +1,3 @@
+如果有这种的话，我根本不需要original_mat去每帧的时候把vector<centroids>画成mat，因为这个东西的目的是后面或成track_mat去过滤。
+如果我保存了centroids_buffer，我可以直接写一个函数find_filtred_centroids(centroids_buffer, filtered_index)
+很多图像的出现只是为了作为中间媒介进行过滤。
