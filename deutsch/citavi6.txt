@@ -1,0 +1,3 @@
+ich habe heute Citavi 6.1 auf meinem neuen Laptop installiert, leider erscheint schon direkt beim Installationsassistenten nicht die Möglichkeit das Add-In für Word zu installieren. Die Problemlösung über die Systemsteuerung und "Ändern" führt also ebenso ins Leere. Woran kann das liegen?
+
+Ich habe das Word 365 und es war bereits vorinstalliert auf dem Laptop.

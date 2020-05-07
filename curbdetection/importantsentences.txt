@@ -1,0 +1,5 @@
+An example of two of the most widely used geometric point features are the underlying surface's estimated curvature and normal at a query point p. Both of them are considered local features, as they characterize a point using the information provided by its k closest point neighbors.
+
+Traditional
+range-visual fusion methods [2,3] used the detection results from range data to guide the curb searching
+in the visual image, which have the advantage of enlarging the detection range.

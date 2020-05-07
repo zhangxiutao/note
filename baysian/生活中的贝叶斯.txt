@@ -1,0 +1,6 @@
+p(x|unstable)*p(unstable) = p(x*unstable)
+已知docker不稳定的时候连续一百次不出问题(x)概率很低
+那么p(x|unstable)概率就很低。所以p(x*unstable)很低，
+也就是同时发生概率很低。
+因为这两个不是独立事件，所以我们才会用贝叶斯公式考虑
+也就是p(x*unstable)!=p(x)*p(unstable)

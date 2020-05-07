@@ -1,0 +1,1 @@
+a-floor(a/n)*n

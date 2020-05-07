@@ -1,0 +1,3 @@
+比如远程有本地没有的文件
+本地从commit A开始开发成Commit C
+远程从A开始变成了B，那么直接push会不成功，git要求在本地解决冲突。merge B和C后再push

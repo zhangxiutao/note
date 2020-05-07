@@ -1,0 +1,4 @@
+p(x)*p(unstable)是很低的
+假设docker不稳定，那么p(unstable)应该很高
+x连续几次都成功
+p(x|unstable) = p(unstable|x)*p(x)/(p(unstable|x)*p(x) + p(unstable|!x)*p(!x))或者p(unstable)

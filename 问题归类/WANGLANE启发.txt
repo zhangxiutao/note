@@ -1,0 +1,7 @@
+1.选择了B-Spline为中线进行建模,引入参数k由中线推导两边的线。
+2.CHEVP方法进行初始化的估计，然后利用曲线是连续变化的这一点，
+用activa contours的方法更新曲线。
+3.lane detection就分成了两步，第一步是CHEVP,然后是用ACTIVE CONTOURS的方法
+更新模型。
+traction的话不用算外力内力，也不用CHEVP。而是用上一帧的参数，
+更新参数的方法也更简单。

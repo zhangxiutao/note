@@ -1,0 +1,2 @@
+所以可以先checkout -b然后commit。这样原来的branch的指针就不会跟着移动。如果先commit了再branch其实没必要了。
+可以checkout到一个commit号上，虽然是detached head 但是新建一个branch，然后再commit

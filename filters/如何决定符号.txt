@@ -1,0 +1,6 @@
+1. gain = gain + h * (measurement - prediction)
+2. estimation = prediction + g * (measurement - prediction)
+3. prediction = estimation + gain * dt
+
+上面的第二个式子把所有项当成向量，整个式子当成向量的计算。那么这个式子的意义就是estimation的终点是prediction的终点加上一个新的向量。
+(measurement - prediction)这个向量是以prediction的终点为起点，以measurement的终点为终点。
