@@ -1,0 +1,2 @@
+MOS管的Gate是没有电流的。Gate与下面的N结是绝缘的。MOS管用作电压源。
+BJT的PNP都是联通的。BJT用作电流源。
